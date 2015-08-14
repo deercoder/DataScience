@@ -16,3 +16,8 @@ advanced introduction
 ## Tools
 
 For this part, if we want to use the tools well to calculate the linear lagebra, or we want to practice, just use the **Numpy**.
+
+
+## Remark
+
+In this part, math theory is more important, so just read **at least** one book on this part, and try some tools that use them, the future work should be on the book other than tools
