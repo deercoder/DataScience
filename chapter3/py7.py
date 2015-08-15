@@ -11,3 +11,6 @@ plt.xlabel("test 1 grade")
 plt.ylabel("test 2 grade")
 plt.title("Axes aren't comparable")
 plt.show()
+
+
+# we can add plt.axis("equal") to show equal x and y-axis
