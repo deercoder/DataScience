@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 import math
 
+def normal_cdf(x, mu=0, sigma=1):
+    return (1 + math.erf((x - mu) / math.sqrt(2) / sigma)) / 2
+
 def inverse_normal_cdf(p, mu=0, sigma=1, tolerance=0.00001):
     # if not standard, compute standard and rescale
     if mu != 0 or sigma != 1:
@@ -21,6 +24,7 @@ def inverse_normal_cdf(p, mu=0, sigma=1, tolerance=0.00001):
             break
 
     return mid_z
+
 
 
 def normal_approximation_to_binomial(n, p):
