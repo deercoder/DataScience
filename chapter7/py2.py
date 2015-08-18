@@ -84,7 +84,10 @@ def two_sided_p_value(x, mu = 0, sigma = 1):
 
 # let's see the 530 heads experiment
 two_sided_p_value(529.5, mu_0, sigma_0) # 0.062
-# why 529.5 instead of 530? becuase of continutity correction, that normal_probability_between(529.5, 530.5, mu_0, sigma_0) is better than the result of normal_probability_between(530, 531, mu_0, sigma_0) for the estimate of the probability of seeing 530 heads
+# why 529.5 instead of 530? becuase of continutity correction, that
+# normal_probability_between(529.5, 530.5, mu_0, sigma_0) is better than the result
+# of normal_probability_between(530, 531, mu_0, sigma_0) for the estimate of the
+# probability of seeing 530 heads
 
 
 
