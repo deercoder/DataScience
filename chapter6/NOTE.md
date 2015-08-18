@@ -20,6 +20,7 @@ NOTE
     * pdf: probability density function
     * cdf: cumulative distributions function
 
+            def uniform_pdf(x):
                 return 1 if x >= 0 and x < 1 else 0
 
             def uniform_cdf(x):
@@ -30,7 +31,7 @@ NOTE
                 else:
                     return 1
 
-5. Normal distributions:
+5. normal distributions:
 
     * mean(u)
     * standard deviation (sigma)
@@ -38,3 +39,7 @@ NOTE
             def normal_pdf(x, mu=0, sigma=1):
                 sqrt_two_pi = math.sqrt(2 * math.pi)
                 return (math.exp(-(x-mu) ** 2 / 2 / sigma ** 2) / (sqrt_two_pi * sigma))
+
+6. Central limit Theorem:
+
+    if x_1, x_2 ... x_n are random variables with mean u and standard deviation sigma, then (x_1 + x_2 + ... + x_n) / n is approximately **normally distributed**, with the mean _u_ and standard deviation _sigma/sqrt(n)_
